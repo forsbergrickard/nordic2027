@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #f5f1e8;
+    color: #17324d;
+    font-family: Arial, sans-serif;
+}
+
+
+/* HEADER */
+
+header {
+    height: 90px;
+    padding: 0 6%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f5f1e8;
+}
+
+.logo {
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+nav a {
+    color: #17324d;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.register-button {
+    background-color: #17324d;
+    color: white;
+    padding: 12px 22px;
+}
+
+
+/* HERO */
+
+.hero {
+    min-height: 700px;
+    padding: 110px 8%;
+
+    background:
+        linear-gradient(
+            rgba(15, 40, 60, 0.55),
+            rgba(15, 40, 60, 0.55)
+        ),
+        url("../images/uppsala-universitet.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    color: white;
+}
+
+.date {
+    font-size: 14px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.hero h1 {
+    font-family: Georgia, serif;
+    font-size: 72px;
+    line-height: 1.05;
+    font-weight: normal;
+    max-width: 850px;
+    margin: 30px 0;
+}
+
+.hero h2 {
+    font-family: Georgia, serif;
+    font-size: 28px;
+    font-weight: normal;
+    font-style: italic;
+}
+
+.buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 45px;
+}
+
+.buttons a {
+    padding: 16px 28px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.primary-button {
+    background-color: white;
+    color: #17324d;
+}
+
+.secondary-button {
+    border: 2px solid white;
+    color: white;
+}
+/* MOBILE */
+
+@media (max-width: 800px) {
+
+    header {
+        height: auto;
+        padding: 20px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .hero {
+        min-height: 650px;
+        padding: 80px 25px;
+    }
+
+    .hero h1 {
+        font-size: 46px;
+    }
+
+    .hero h2 {
+        font-size: 23px;
+    }
+
+    .buttons {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+}
