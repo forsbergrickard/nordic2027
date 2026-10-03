@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     background-color: #f5f1e8;
@@ -56,7 +60,7 @@ nav a {
             rgba(15, 40, 60, 0.55),
             rgba(15, 40, 60, 0.55)
         ),
-        url("../images/uppsala-universitet.jpg");
+        url("../images/uppsala-universitet.webp");
 
     background-size: cover;
     background-position: center;
@@ -107,6 +111,579 @@ nav a {
     border: 2px solid white;
     color: white;
 }
+/* QUICK INFO */
+
+.quick-info {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 45px 40px;
+    background-color: #f5f1e8;
+}
+
+.info-box {
+    padding: 10px 35px;
+    border-right: 1px solid #c9c5bc;
+}
+
+.info-box:last-child {
+    border-right: none;
+}
+
+.info-icon {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.info-box h3 {
+    font-family: Georgia, serif;
+    font-size: 20px;
+    margin: 0 0 10px 0;
+}
+
+.info-box p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 0;
+    color: #52606b;
+}
+/* THEME SECTION */
+
+.theme-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 520px;
+    background-color: #ffffff;
+}
+
+.theme-text {
+    padding: 80px 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section-label {
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #476b7a;
+    margin-bottom: 15px;
+}
+
+.theme-text h2 {
+    font-family: Georgia, serif;
+    font-size: 44px;
+    line-height: 1.1;
+    font-weight: normal;
+    margin: 0 0 25px 0;
+}
+
+.theme-text > p:not(.section-label) {
+    max-width: 560px;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #52606b;
+    margin-bottom: 25px;
+}
+
+.text-link {
+    color: #17324d;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.text-link:hover {
+    text-decoration: underline;
+}
+
+.theme-image {
+    min-height: 520px;
+}
+
+.theme-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+/* SPEAKERS */
+
+.speakers-section {
+    padding: 80px 6%;
+    background-color: #eaf1f4;
+}
+
+.section-heading {
+    max-width: 1300px;
+    margin: 0 auto 35px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.section-heading h2 {
+    font-family: Georgia, serif;
+    font-size: 36px;
+    font-weight: normal;
+    margin: 8px 0 0 0;
+}
+
+.speakers-grid {
+    max-width: 1300px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.speaker-card {
+    background-color: white;
+    overflow: hidden;
+}
+
+.speaker-placeholder {
+    height: 270px;
+    background-color: #d2dde2;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #6d7d85;
+    font-size: 14px;
+}
+.speaker-photo {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    object-position: center 25%;
+    display: block;
+}
+.mikael-photo {
+    object-position: center 20%;
+}
+
+.speaker-info {
+    padding: 22px;
+}
+
+.speaker-info h3 {
+    font-family: Georgia, serif;
+    font-size: 20px;
+    margin: 0 0 7px 0;
+}
+
+.speaker-meta {
+    font-size: 13px;
+    color: #64747c;
+    margin: 0 0 18px 0;
+}
+
+.speaker-title {
+    font-family: Georgia, serif;
+    font-size: 15px;
+    line-height: 1.5;
+    font-style: italic;
+    margin: 0;
+}
+.dual-speaker-photo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 320px;
+    overflow: hidden;
+}
+
+.dual-speaker-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+/* ACTION CARDS */
+
+.action-section {
+    padding: 90px 6%;
+    background-color: #f5f1e8;
+}
+
+.action-grid {
+    max-width: 1300px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.action-card {
+    min-height: 330px;
+    padding: 42px;
+
+    background-color: white;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.action-card h2 {
+    font-family: Georgia, serif;
+    font-size: 30px;
+    font-weight: normal;
+
+    margin: 8px 0 20px 0;
+}
+
+.action-card > p:not(.section-label) {
+    color: #52606b;
+    font-size: 15px;
+    line-height: 1.7;
+
+    margin: 0 0 30px 0;
+}
+
+.action-link {
+    margin-top: auto;
+
+    color: #17324d;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.action-link:hover {
+    text-decoration: underline;
+}
+/* PROGRAMME */
+
+.programme-section {
+    padding: 90px 6%;
+    background-color: #ffffff;
+}
+
+.programme-heading {
+    max-width: 800px;
+    margin: 0 auto 50px auto;
+    text-align: center;
+}
+
+.programme-heading h2 {
+    font-family: Georgia, serif;
+    font-size: 42px;
+    font-weight: normal;
+    margin: 8px 0 20px 0;
+}
+
+.programme-heading > p:not(.section-label) {
+    color: #52606b;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.programme-days {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.programme-day {
+    border-top: 1px solid #c9c5bc;
+}
+
+.programme-day:last-child {
+    border-bottom: 1px solid #c9c5bc;
+}
+
+.programme-day summary {
+    padding: 28px 10px;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    list-style: none;
+}
+
+.programme-day summary::-webkit-details-marker {
+    display: none;
+}
+
+.day-name {
+    display: block;
+
+    font-family: Georgia, serif;
+    font-size: 28px;
+}
+
+.day-date {
+    display: block;
+
+    margin-top: 5px;
+
+    color: #64747c;
+    font-size: 14px;
+}
+
+.day-symbol {
+    font-size: 28px;
+    font-weight: 300;
+}
+
+.programme-day[open] .day-symbol {
+    transform: rotate(45deg);
+}
+
+.programme-content {
+    padding: 0 10px 30px 10px;
+}
+
+.programme-item {
+    display: grid;
+    grid-template-columns: 130px 1fr;
+    gap: 20px;
+
+    padding: 13px 0;
+
+    border-top: 1px solid #e6e3dc;
+
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.programme-item time {
+    color: #64747c;
+    font-weight: bold;
+}
+
+.keynote-item {
+    color: #17324d;
+}
+
+.programme-note {
+    max-width: 1000px;
+    margin: 25px auto 0 auto;
+
+    color: #7a858b;
+    font-size: 13px;
+    font-style: italic;
+}
+/* UPPSALA & PRACTICAL INFORMATION */
+
+.uppsala-section {
+    padding: 90px 6%;
+    background-color: #17324d;
+    color: white;
+}
+
+.uppsala-intro {
+    max-width: 1300px;
+    margin: 0 auto 65px auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
+}
+
+.light-label {
+    grid-column: 1 / -1;
+    color: #b9ccd6;
+}
+
+.uppsala-intro h2 {
+    font-family: Georgia, serif;
+    font-size: 46px;
+    line-height: 1.1;
+    font-weight: normal;
+
+    margin: 10px 0 0 0;
+}
+
+.uppsala-intro > p:not(.section-label) {
+    align-self: end;
+
+    max-width: 560px;
+    margin: 10px 0 0 0;
+
+    color: #d9e2e7;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.practical-grid {
+    max-width: 1300px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.practical-item {
+    padding: 40px 35px 10px 0;
+}
+
+.practical-item + .practical-item {
+    padding-left: 35px;
+    border-left: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.practical-number {
+    display: block;
+
+    margin-bottom: 30px;
+
+    color: #9fb8c4;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.practical-item h3 {
+    font-family: Georgia, serif;
+    font-size: 24px;
+    font-weight: normal;
+
+    margin: 0 0 15px 0;
+}
+
+.practical-item p {
+    min-height: 85px;
+
+    color: #d9e2e7;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.light-link {
+    display: inline-block;
+    margin-top: 15px;
+
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.light-link:hover {
+    text-decoration: underline;
+}
+/* FOOTER */
+
+.site-footer {
+    padding: 70px 6% 30px 6%;
+    background-color: #0d2233;
+    color: white;
+}
+
+.footer-main {
+    max-width: 1300px;
+    margin: 0 auto 60px auto;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1.3fr;
+    gap: 60px;
+}
+
+.footer-title {
+    font-family: Georgia, serif;
+    font-size: 25px;
+    line-height: 1.3;
+
+    margin: 0 0 20px 0;
+}
+
+.footer-theme {
+    color: #c7d5dc;
+    font-size: 14px;
+    line-height: 1.7;
+
+    margin-bottom: 20px;
+}
+
+.footer-date {
+    color: #9fb4be;
+    font-size: 13px;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.footer-links h3 {
+    margin: 0 0 8px 0;
+
+    color: #9fb4be;
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.footer-links a {
+    color: white;
+    font-size: 14px;
+    line-height: 1.5;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-links p {
+    margin: 0;
+
+    color: #9fb4be;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.footer-bottom {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding-top: 25px;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+
+    display: flex;
+    justify-content: space-between;
+
+    color: #829ba7;
+    font-size: 12px;
+}
+
+/* MOBILE MENU BUTTON */
+
+.menu-toggle {
+    display: none;
+
+    width: 42px;
+    height: 42px;
+
+    padding: 8px;
+
+    background: none;
+    border: none;
+
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    display: block;
+
+    width: 100%;
+    height: 2px;
+
+    margin: 6px 0;
+
+    background-color: #17324d;
+}
+
 /* MOBILE */
 
 @media (max-width: 800px) {
@@ -116,9 +693,46 @@ nav a {
         padding: 20px;
     }
 
-    nav {
-        display: none;
-    }
+    .menu-toggle {
+    display: block;
+}
+
+header {
+    position: relative;
+}
+
+nav {
+    display: none;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+
+    padding: 25px;
+
+    background-color: #f5f1e8;
+
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+
+    z-index: 1000;
+
+    border-top: 1px solid #d8d3c8;
+}
+
+nav.open {
+    display: flex;
+}
+
+nav a {
+    font-size: 16px;
+}
+
+nav .register-button {
+    display: inline-block;
+}
 
     .hero {
         min-height: 650px;
@@ -137,5 +751,125 @@ nav a {
         flex-direction: column;
         align-items: flex-start;
     }
+.theme-section {
+    grid-template-columns: 1fr;
+}
 
+.theme-text {
+    padding: 60px 25px;
+}
+
+.theme-text h2 {
+    font-size: 36px;
+}
+
+.theme-image {
+    min-height: 320px;
+}
+.speakers-section {
+    padding: 60px 25px;
+}
+
+.section-heading {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.section-heading h2 {
+    font-size: 32px;
+}
+
+.speakers-grid {
+    grid-template-columns: 1fr;
+}
+
+.speaker-placeholder {
+    height: 350px;
+}
+.action-section {
+    padding: 60px 25px;
+}
+
+.action-grid {
+    grid-template-columns: 1fr;
+}
+
+.action-card {
+    min-height: 280px;
+    padding: 32px;
+}
+.programme-section {
+    padding: 60px 25px;
+}
+
+.programme-heading {
+    text-align: left;
+}
+
+.programme-heading h2 {
+    font-size: 36px;
+}
+
+.programme-item {
+    grid-template-columns: 90px 1fr;
+    gap: 15px;
+}
+
+.day-name {
+    font-size: 24px;
+}
+.uppsala-section {
+    padding: 60px 25px;
+}
+
+.uppsala-intro {
+    grid-template-columns: 1fr;
+    margin-bottom: 45px;
+}
+
+.light-label {
+    grid-column: auto;
+}
+
+.uppsala-intro h2 {
+    font-size: 36px;
+    margin-bottom: 25px;
+}
+
+.practical-grid {
+    grid-template-columns: 1fr;
+}
+
+.practical-item {
+    padding: 30px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.practical-item + .practical-item {
+    padding-left: 0;
+    border-left: none;
+}
+
+.practical-item p {
+    min-height: auto;
+}
+
+.practical-number {
+    margin-bottom: 15px;
+}
+.site-footer {
+    padding: 55px 25px 25px 25px;
+}
+
+.footer-main {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    margin-bottom: 45px;
+}
+
+.footer-bottom {
+    flex-direction: column;
+    gap: 5px;
+}
 }
