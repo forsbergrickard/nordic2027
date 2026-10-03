@@ -779,7 +779,24 @@ nav .register-button {
 .section-heading h2 {
     font-size: 32px;
 }
+.quick-info {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    padding: 20px 25px;
+}
 
+.info-box {
+    width: 100%;
+    padding: 25px 0;
+
+    border-right: none;
+    border-bottom: 1px solid #c9c5bc;
+}
+
+.info-box:last-child {
+    border-bottom: none;
+}
 .speakers-grid {
     grid-template-columns: 1fr;
 }
