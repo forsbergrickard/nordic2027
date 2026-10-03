@@ -1277,6 +1277,7 @@ nav a {
 
     .menu-toggle {
     display: block;
+    }
         .subpage-hero {
         padding: 70px 25px;
     }
@@ -1356,13 +1357,13 @@ nav a {
         font-size: 25px;
     }
 
-}
+
 
 header {
     position: relative;
 }
 
-nav {
+#main-nav {
     display: none;
 
     position: absolute;
@@ -1383,15 +1384,15 @@ nav {
     border-top: 1px solid #d8d3c8;
 }
 
-nav.open {
+#main-nav.open {
     display: flex;
 }
 
-nav a {
+#main-nav a {
     font-size: 16px;
 }
 
-nav .register-button {
+#main-nav .register-button {
     display: inline-block;
 }
 
