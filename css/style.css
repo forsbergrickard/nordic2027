@@ -30,6 +30,26 @@ header {
     letter-spacing: 1px;
 }
 
+.logo a {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    color: #17324d;
+    text-decoration: none;
+}
+
+.logo img {
+    width: 75px;
+    height: auto;
+    display: block;
+}
+
+.logo span {
+    font-family: Georgia, serif;
+    font-size: 18px;
+    line-height: 1.2;
+}
+
 nav {
     display: flex;
     align-items: center;
@@ -1387,7 +1407,13 @@ nav a {
         font-size: 25px;
     }
 
+.logo img {
+    width: 55px;
+}
 
+.logo span {
+    font-size: 15px;
+}
 
 header {
     position: relative;
