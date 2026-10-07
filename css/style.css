@@ -707,6 +707,10 @@ nav a {
     line-height: 1.6;
 }
 
+.footer-organiser {
+    margin-top: 30px;
+}
+
 .footer-bottom {
     max-width: 1300px;
     margin: 0 auto;
@@ -1316,6 +1320,293 @@ nav a {
     background-color: #17324d;
 }
 
+/* ABSTRACTS PAGE */
+
+.abstract-hero-action {
+    margin-top: 35px;
+}
+
+.abstract-dates {
+    background-color: #17324d;
+    color: #ffffff;
+}
+
+.abstract-dates-inner {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 35px 8%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.abstract-date {
+    padding: 5px 35px;
+    border-right: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.abstract-date:first-child {
+    padding-left: 0;
+}
+
+.abstract-date:last-child {
+    border-right: none;
+}
+
+.abstract-date span {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    color: #c9d7de;
+}
+
+.abstract-date strong {
+    display: block;
+    font-family: Georgia, serif;
+    font-size: 22px;
+    font-weight: normal;
+}
+
+
+/* Main abstract sections */
+
+.abstract-section {
+    padding: 90px 8%;
+    background-color: #ffffff;
+}
+
+.abstract-section-light {
+    background-color: #f5f1e8;
+}
+
+.abstract-content {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.abstract-content-wide {
+    max-width: 1300px;
+}
+
+.abstract-content > h2 {
+    margin: 12px 0 30px 0;
+    font-family: Georgia, serif;
+    font-size: 42px;
+    line-height: 1.15;
+    font-weight: normal;
+    color: #17324d;
+}
+
+.abstract-content > p:not(.section-label) {
+    margin: 0 0 18px 0;
+    color: #52606b;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+
+/* Instructions */
+
+.abstract-list {
+    margin: 30px 0 0 0;
+    padding: 0;
+    list-style: none;
+    border-top: 1px solid #d8d3c8;
+}
+
+.abstract-list li {
+    position: relative;
+    padding: 18px 15px 18px 35px;
+    color: #52606b;
+    font-size: 15px;
+    line-height: 1.7;
+    border-bottom: 1px solid #d8d3c8;
+}
+
+.abstract-list li::before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    top: 18px;
+    color: #476b7a;
+}
+
+
+/* Proposal types */
+
+.proposal-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.proposal-card {
+    padding: 40px;
+    background-color: #ffffff;
+    border-top: 3px solid #17324d;
+}
+
+.proposal-number {
+    margin: 0 0 25px 0;
+    color: #7a858b;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.proposal-card h3 {
+    margin: 0 0 20px 0;
+    font-family: Georgia, serif;
+    font-size: 25px;
+    line-height: 1.25;
+    font-weight: normal;
+    color: #17324d;
+}
+
+.proposal-card > p:not(.proposal-number) {
+    margin: 0;
+    color: #52606b;
+    font-size: 14px;
+    line-height: 1.75;
+}
+
+
+/* Guidelines */
+
+.guideline-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 35px;
+    margin-top: 40px;
+}
+
+.guideline-block {
+    padding: 40px;
+    background-color: #eaf1f4;
+}
+
+.guideline-block h3 {
+    margin: 0 0 20px 0;
+    font-family: Georgia, serif;
+    font-size: 26px;
+    line-height: 1.25;
+    font-weight: normal;
+    color: #17324d;
+}
+
+.guideline-block p,
+.guideline-block li {
+    color: #52606b;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.guideline-block p {
+    margin: 0 0 20px 0;
+}
+
+.guideline-block ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.guideline-block li {
+    margin-bottom: 14px;
+}
+
+.guideline-block li:last-child {
+    margin-bottom: 0;
+}
+
+
+/* Final submission block */
+
+.abstract-submit {
+    padding: 90px 8%;
+    background-color: #17324d;
+    color: #ffffff;
+    text-align: center;
+}
+
+.abstract-submit-inner {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.abstract-submit .section-label {
+    color: #c9d7de;
+}
+
+.abstract-submit h2 {
+    margin: 12px 0 20px 0;
+    font-family: Georgia, serif;
+    font-size: 46px;
+    font-weight: normal;
+}
+
+.abstract-submit p:not(.section-label) {
+    margin: 0 0 30px 0;
+    color: #dce4e8;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.abstract-submit .primary-button {
+    display: inline-block;
+}
+
+.abstract-notice {
+    background-color: #17324d;
+    color: #ffffff;
+}
+
+.abstract-notice-inner {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 22px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.abstract-notice-text {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.abstract-notice-text span {
+    color: #c9d7de;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+.abstract-notice-text p {
+    margin: 0;
+    font-size: 15px;
+}
+
+.abstract-notice-text strong {
+    font-weight: normal;
+    color: #c9d7de;
+}
+
+.abstract-notice a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.abstract-notice a:hover {
+    text-decoration: underline;
+}
+
 /* MOBILE */
 
 @media (max-width: 800px) {
@@ -1417,6 +1708,102 @@ nav a {
 
 header {
     position: relative;
+}
+
+    /* ABSTRACTS PAGE */
+
+    .abstract-hero-action {
+        margin-top: 30px;
+    }
+
+    .abstract-dates-inner {
+        grid-template-columns: 1fr;
+        padding: 15px 25px;
+    }
+
+    .abstract-date {
+        padding: 20px 0;
+        border-right: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+    }
+
+    .abstract-date:first-child {
+        padding-left: 0;
+    }
+
+    .abstract-date:last-child {
+        border-bottom: none;
+    }
+
+    .abstract-date strong {
+        font-size: 20px;
+    }
+
+    .abstract-section {
+        padding: 65px 25px;
+    }
+
+    .abstract-content > h2 {
+        font-size: 34px;
+        margin-bottom: 25px;
+    }
+
+    .abstract-content > p:not(.section-label) {
+        font-size: 15px;
+        line-height: 1.75;
+    }
+
+    .proposal-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        margin-top: 30px;
+    }
+
+    .proposal-card {
+        padding: 30px 25px;
+    }
+
+    .proposal-card h3 {
+        font-size: 23px;
+    }
+
+    .guideline-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        margin-top: 30px;
+    }
+
+    .guideline-block {
+        padding: 30px 25px;
+    }
+
+    .guideline-block h3 {
+        font-size: 23px;
+    }
+
+    .abstract-submit {
+        padding: 70px 25px;
+    }
+
+    .abstract-submit h2 {
+        font-size: 36px;
+    }
+
+    .abstract-notice-inner {
+    padding: 22px 25px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.abstract-notice-text {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 7px;
+}
+
+.abstract-notice-text p {
+    line-height: 1.5;
 }
 
 #main-nav {
