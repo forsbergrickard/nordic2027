@@ -15,18 +15,13 @@
     <header>
 
         <div class="logo">
-    <a href="index.html">
-        <img src="images/logo.webp"
-             alt="Nordic Family Therapy Congress 2027 logo">
-        <span>Nordic Family Therapy Congress 2027</span>
-    </a>
-</div>
+            <a href="index.html">
+                <img src="images/logo.webp" alt="Nordic Family Therapy Congress 2027 logo">
+                <span>Nordic Family Therapy Congress 2027</span>
+            </a>
+        </div>
 
-        <button
-            class="menu-toggle"
-            aria-label="Open menu"
-            aria-expanded="false"
-        >
+        <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">
             <span></span>
             <span></span>
             <span></span>
@@ -36,20 +31,24 @@
 
             <a href="index.html#about">About</a>
 
-            <a href="index.html#programme">Programme</a>
+            <div class="nav-dropdown">
+                <button class="nav-dropdown-toggle" type="button" aria-expanded="false"
+                    aria-controls="programme-submenu">
+                    Programme
+                    <span class="dropdown-arrow" aria-hidden="true">⌄</span>
+                </button>
 
-            <a href="keynotes.html">Keynotes</a>
+                <div class="nav-dropdown-menu" id="programme-submenu">
+                    <a href="index.html#programme">Programme Overview</a>
+                    <a href="keynotes.html">Keynote Speakers</a>
+                    <a href="subplenaries.html">Subplenaries</a>
+                </div>
+            </div>
 
             <a href="practical-info.html">Practical Info</a>
-
             <a href="abstracts.html">Abstracts</a>
 
-            <a
-                class="register-button"
-                href="https://axacoair.se/go?Ll78cadP"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
+            <a class="register-button" href="https://axacoair.se/go?Ll78cadP" target="_blank" rel="noopener noreferrer">
                 Register
             </a>
 
@@ -77,8 +76,6 @@
 
         </section>
 
-
-</section>
 
         <nav class="practical-nav" aria-label="Practical information sections">
 
@@ -292,12 +289,8 @@
             </div>
 
 
-            <a
-                class="practical-register-button"
-                href="https://axacoair.se/go?Ll78cadP"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
+            <a class="practical-register-button" href="https://axacoair.se/go?Ll78cadP" target="_blank"
+                rel="noopener noreferrer">
                 Register for the congress →
             </a>
 
@@ -330,236 +323,221 @@
 
             <div class="hotel-grid">
 
-    <!-- CLARION HOTEL GILLET -->
-    <article class="hotel-card">
+                <!-- CLARION HOTEL GILLET -->
+                <article class="hotel-card">
 
-        <div class="hotel-image">
-            <img
-                src="images/hotels/clarion.webp"
-                alt="Clarion Hotel Gillet"
-            >
-        </div>
+                    <div class="hotel-image">
+                        <img src="images/hotels/clarion.webp" alt="Clarion Hotel Gillet">
+                    </div>
 
-        <div class="hotel-content">
+                    <div class="hotel-content">
 
-            <h3>Clarion Hotel Gillet</h3>
+                        <h3>Clarion Hotel Gillet</h3>
 
-            <p class="hotel-description">
-                A classic Uppsala hotel with excellent service and an
-                international vibe. Stay right in the heart of lively
-                Dragarbrunnsgatan, just steps away from restaurants,
-                shopping and attractions. Treat yourself to a visit
-                to the Selma City Spa located in the hotel.
-            </p>
+                        <p class="hotel-description">
+                            A classic Uppsala hotel with excellent service and an
+                            international vibe. Stay right in the heart of lively
+                            Dragarbrunnsgatan, just steps away from restaurants,
+                            shopping and attractions. Treat yourself to a visit
+                            to the Selma City Spa located in the hotel.
+                        </p>
 
-            <div class="hotel-details">
+                        <div class="hotel-details">
 
-                <div>
-                    <span>Single room</span>
-                    <strong>SEK 1,926</strong>
-                    <small>per night</small>
-                </div>
+                            <div>
+                                <span>Single room</span>
+                                <strong>SEK 1,926</strong>
+                                <small>per night</small>
+                            </div>
 
-                <div>
-                    <span>Double room</span>
-                    <strong>SEK 2,155</strong>
-                    <small>per night</small>
-                </div>
+                            <div>
+                                <span>Double room</span>
+                                <strong>SEK 2,155</strong>
+                                <small>per night</small>
+                            </div>
 
-            </div>
+                        </div>
 
-            <p class="hotel-address">
-                Dragarbrunnstorg, Uppsala
-            </p>
+                        <p class="hotel-address">
+                            Dragarbrunnstorg, Uppsala
+                        </p>
 
-        </div>
+                    </div>
 
-    </article>
+                </article>
 
 
-    <!-- ELITE HOTEL ACADEMIA -->
-    <article class="hotel-card">
+                <!-- ELITE HOTEL ACADEMIA -->
+                <article class="hotel-card">
 
-        <div class="hotel-image">
-            <img
-                src="images/hotels/elite.webp"
-                alt="Elite Hotel Academia"
-            >
-        </div>
+                    <div class="hotel-image">
+                        <img src="images/hotels/elite.webp" alt="Elite Hotel Academia">
+                    </div>
 
-        <div class="hotel-content">
+                    <div class="hotel-content">
 
-            <h3>Elite Hotel Academia</h3>
+                        <h3>Elite Hotel Academia</h3>
 
-            <p class="hotel-description">
-                Enjoy a central yet quiet stay just next to the train
-                station. The hotel features elegantly decorated rooms
-                and a relaxation area with a sauna. Don't miss Miss Voon
-                – the hotel's Asian restaurant and sky bar offering
-                views across Uppsala.
-            </p>
+                        <p class="hotel-description">
+                            Enjoy a central yet quiet stay just next to the train
+                            station. The hotel features elegantly decorated rooms
+                            and a relaxation area with a sauna. Don't miss Miss Voon
+                            – the hotel's Asian restaurant and sky bar offering
+                            views across Uppsala.
+                        </p>
 
-            <div class="hotel-details">
+                        <div class="hotel-details">
 
-                <div>
-                    <span>Single room</span>
-                    <strong>SEK 2,145</strong>
-                    <small>per night</small>
-                </div>
+                            <div>
+                                <span>Single room</span>
+                                <strong>SEK 2,145</strong>
+                                <small>per night</small>
+                            </div>
 
-                <div>
-                    <span>Double room</span>
-                    <strong>SEK 2,284</strong>
-                    <small>per night</small>
-                </div>
+                            <div>
+                                <span>Double room</span>
+                                <strong>SEK 2,284</strong>
+                                <small>per night</small>
+                            </div>
 
-            </div>
+                        </div>
 
-            <p class="hotel-address">
-                Suttungs gränd 6, Uppsala
-            </p>
+                        <p class="hotel-address">
+                            Suttungs gränd 6, Uppsala
+                        </p>
 
-        </div>
+                    </div>
 
-    </article>
+                </article>
 
 
-    <!-- SCANDIC UPLANDIA -->
-    <article class="hotel-card">
+                <!-- SCANDIC UPLANDIA -->
+                <article class="hotel-card">
 
-        <div class="hotel-image">
-            <img
-                src="images/hotels/scandic_uplandia.webp"
-                alt="Scandic Uplandia"
-            >
-        </div>
+                    <div class="hotel-image">
+                        <img src="images/hotels/scandic_uplandia.webp" alt="Scandic Uplandia">
+                    </div>
 
-        <div class="hotel-content">
+                    <div class="hotel-content">
 
-            <h3>Scandic Uplandia</h3>
+                        <h3>Scandic Uplandia</h3>
 
-            <p class="hotel-description">
-                With Uppsala's attractions, restaurants and shopping
-                right outside your door, Scandic Uplandia offers
-                tastefully decorated rooms, a gym, sauna and a generous
-                breakfast buffet to start your day.
-            </p>
+                        <p class="hotel-description">
+                            With Uppsala's attractions, restaurants and shopping
+                            right outside your door, Scandic Uplandia offers
+                            tastefully decorated rooms, a gym, sauna and a generous
+                            breakfast buffet to start your day.
+                        </p>
 
-            <div class="hotel-details">
+                        <div class="hotel-details">
 
-                <div>
-                    <span>Single room</span>
-                    <strong>SEK 1,690</strong>
-                    <small>per night</small>
-                </div>
+                            <div>
+                                <span>Single room</span>
+                                <strong>SEK 1,690</strong>
+                                <small>per night</small>
+                            </div>
 
-                <div>
-                    <span>Double room</span>
-                    <strong>SEK 1,940</strong>
-                    <small>per night</small>
-                </div>
+                            <div>
+                                <span>Double room</span>
+                                <strong>SEK 1,940</strong>
+                                <small>per night</small>
+                            </div>
 
-            </div>
+                        </div>
 
-            <p class="hotel-address">
-                Dragarbrunnsgatan 32, Uppsala
-            </p>
+                        <p class="hotel-address">
+                            Dragarbrunnsgatan 32, Uppsala
+                        </p>
 
-        </div>
+                    </div>
 
-    </article>
+                </article>
 
 
-    <!-- HOME HOTEL UPPSALA -->
-    <article class="hotel-card">
+                <!-- HOME HOTEL UPPSALA -->
+                <article class="hotel-card">
 
-        <div class="hotel-image">
-            <img
-                src="images/hotels/home_hotel.webp"
-                alt="Home Hotel Uppsala"
-            >
-        </div>
+                    <div class="hotel-image">
+                        <img src="images/hotels/home_hotel.webp" alt="Home Hotel Uppsala">
+                    </div>
 
-        <div class="hotel-content">
+                    <div class="hotel-content">
 
-            <h3>Home Hotel Uppsala</h3>
+                        <h3>Home Hotel Uppsala</h3>
 
-            <p class="hotel-description">
-                Great value for money – breakfast and fika are included
-                for guests. Located just a stone's throw from the Central
-                Station and Uppsala Concert &amp; Congress.
-            </p>
+                        <p class="hotel-description">
+                            Great value for money – breakfast and fika are included
+                            for guests. Located just a stone's throw from the Central
+                            Station and Uppsala Concert &amp; Congress.
+                        </p>
 
-            <div class="hotel-details">
+                        <div class="hotel-details">
 
-                <div>
-                    <span>Single room</span>
-                    <strong>SEK 1,877</strong>
-                    <small>per night</small>
-                </div>
+                            <div>
+                                <span>Single room</span>
+                                <strong>SEK 1,877</strong>
+                                <small>per night</small>
+                            </div>
 
-                <div>
-                    <span>Double room</span>
-                    <strong>Coming soon</strong>
-                    <small>&nbsp;</small>
-                </div>
+                            <div>
+                                <span>Double room</span>
+                                <strong>Coming soon</strong>
+                                <small>&nbsp;</small>
+                            </div>
 
-            </div>
+                        </div>
 
-            <p class="hotel-address">
-                Storgatan 30, Uppsala
-            </p>
+                        <p class="hotel-address">
+                            Storgatan 30, Uppsala
+                        </p>
 
-        </div>
+                    </div>
 
-    </article>
+                </article>
 
 
-    <!-- BEST WESTERN UPPSALA -->
-    <article class="hotel-card">
+                <!-- BEST WESTERN UPPSALA -->
+                <article class="hotel-card">
 
-        <div class="hotel-image">
-            <img
-                src="images/hotels/best_western.webp"
-                alt="Best Western Uppsala"
-            >
-        </div>
+                    <div class="hotel-image">
+                        <img src="images/hotels/best_western.webp" alt="Best Western Uppsala">
+                    </div>
 
-        <div class="hotel-content">
+                    <div class="hotel-content">
 
-            <h3>Best Western Uppsala</h3>
+                        <h3>Best Western Uppsala</h3>
 
-            <p class="hotel-description">
-                Enjoy views of the cathedral, the castle and Carolina
-                Rediviva. A comfortable stay with Uppsala's main
-                attractions just around the corner.
-            </p>
+                        <p class="hotel-description">
+                            Enjoy views of the cathedral, the castle and Carolina
+                            Rediviva. A comfortable stay with Uppsala's main
+                            attractions just around the corner.
+                        </p>
 
-            <div class="hotel-details">
+                        <div class="hotel-details">
 
-                <div>
-                    <span>Single room</span>
-                    <strong>SEK 1,590</strong>
-                    <small>per night</small>
-                </div>
+                            <div>
+                                <span>Single room</span>
+                                <strong>SEK 1,590</strong>
+                                <small>per night</small>
+                            </div>
 
-                <div>
-                    <span>Double room</span>
-                    <strong>SEK 1,790</strong>
-                    <small>per night</small>
-                </div>
+                            <div>
+                                <span>Double room</span>
+                                <strong>SEK 1,790</strong>
+                                <small>per night</small>
+                            </div>
+
+                        </div>
+
+                        <p class="hotel-address">
+                            Trädgårdsgatan 5A, Uppsala
+                        </p>
+
+                    </div>
+
+                </article>
 
             </div>
-
-            <p class="hotel-address">
-                Trädgårdsgatan 5A, Uppsala
-            </p>
-
-        </div>
-
-    </article>
-
-</div>
 
 
         </section>
@@ -568,57 +546,56 @@
         <!-- GETTING HERE -->
 
         <section class="practical-section" id="getting-here">
-    <div class="practical-section-inner">
+            <div class="practical-section-inner">
 
-        <p class="section-label">TRAVEL</p>
-        <h2>Getting to Uppsala</h2>
+                <p class="section-label">TRAVEL</p>
+                <h2>Getting to Uppsala</h2>
 
-        <p>
-            Uppsala is easy to reach from both Stockholm and Stockholm Arlanda Airport.
-        </p>
-
-        <div class="travel-options">
-
-            <div class="travel-option">
-                <h3>From Arlanda Airport</h3>
                 <p>
-                    Direct trains to Uppsala depart from SkyCity between Terminals 4
-                    and 5 and take approximately 18 minutes. Bus 801 is another option
-                    and takes around 50 minutes. Taxis are also available outside the
-                    terminals.
+                    Uppsala is easy to reach from both Stockholm and Stockholm Arlanda Airport.
                 </p>
-            </div>
 
-            <div class="travel-option">
-                <h3>From Stockholm</h3>
+                <div class="travel-options">
+
+                    <div class="travel-option">
+                        <h3>From Arlanda Airport</h3>
+                        <p>
+                            Direct trains to Uppsala depart from SkyCity between Terminals 4
+                            and 5 and take approximately 18 minutes. Bus 801 is another option
+                            and takes around 50 minutes. Taxis are also available outside the
+                            terminals.
+                        </p>
+                    </div>
+
+                    <div class="travel-option">
+                        <h3>From Stockholm</h3>
+                        <p>
+                            Regional and commuter trains run frequently between Stockholm and
+                            Uppsala, with a journey time of approximately 30–50 minutes.
+                        </p>
+                    </div>
+
+                    <div class="travel-option">
+                        <h3>By car</h3>
+                        <p>
+                            Uppsala is located along the E4 motorway, approximately 70 km north
+                            of Stockholm.
+                        </p>
+                    </div>
+
+                </div>
+
                 <p>
-                    Regional and commuter trains run frequently between Stockholm and
-                    Uppsala, with a journey time of approximately 30–50 minutes.
+                    For detailed travel information, timetables and links to transport
+                    operators, visit
+                    <a href="https://destinationuppsala.se/en/good-to-know/travelling-to-uppsala/" target="_blank"
+                        rel="noopener noreferrer">
+                        Destination Uppsala – Travelling to Uppsala ↗
+                    </a>.
                 </p>
+
             </div>
-
-            <div class="travel-option">
-                <h3>By car</h3>
-                <p>
-                    Uppsala is located along the E4 motorway, approximately 70 km north
-                    of Stockholm.
-                </p>
-            </div>
-
-        </div>
-
-        <p>
-            For detailed travel information, timetables and links to transport
-            operators, visit
-            <a href="https://destinationuppsala.se/en/good-to-know/travelling-to-uppsala/"
-               target="_blank"
-               rel="noopener noreferrer">
-                Destination Uppsala – Travelling to Uppsala ↗
-            </a>.
-        </p>
-
-    </div>
-</section>
+        </section>
 
     </main>
 
@@ -662,11 +639,7 @@
 
                 <h3>Participate</h3>
 
-                <a
-                    href="https://axacoair.se/go?Ll78cadP"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
+                <a href="https://axacoair.se/go?Ll78cadP" target="_blank" rel="noopener noreferrer">
                     Registration ↗
                 </a>
 
@@ -676,30 +649,29 @@
 
 
             <div class="footer-links">
-    <h3>Contact</h3>
+                <h3>Contact</h3>
 
-    <p>
-        Practical information<br>
-        <a href="mailto:info@congressoab.se">info@congressoab.se</a>
-    </p>
+                <p>
+                    Practical information<br>
+                    <a href="mailto:info@congressoab.se">info@congressoab.se</a>
+                </p>
 
-    <p>
-        Programme questions<br>
-        <a href="mailto:info@sfft.se">info@sfft.se</a>
-    </p>
+                <p>
+                    Programme questions<br>
+                    <a href="mailto:info@sfft.se">info@sfft.se</a>
+                </p>
 
-    <div class="footer-organiser">
-        <h3>Organised by</h3>
-        <a href="https://sfft.se/"
-           target="_blank"
-           rel="noopener noreferrer">
-            Swedish Association for Family Therapy ↗
-        </a>
-        <p>In collaboration with the Nordic family therapy community.</p>
-    </div>
+                <div class="footer-organiser">
+                    <h3>Organised by</h3>
+                    <a href="https://sfft.se/" target="_blank" rel="noopener noreferrer">
+                        Swedish Association for Family Therapy ↗
+                    </a>
+                    <p>In collaboration with the Nordic family therapy community.</p>
+                </div>
+
+            </div>
 
         </div>
-
 
         <div class="footer-bottom">
 
@@ -741,6 +713,34 @@
         });
 
     </script>
+
+
+    <script>
+        const programmeToggle = document.querySelector(".nav-dropdown-toggle");
+        const programmeDropdown = document.querySelector(".nav-dropdown");
+
+        if (programmeToggle && programmeDropdown) {
+            programmeToggle.addEventListener("click", function () {
+                const isOpen = programmeDropdown.classList.toggle("open");
+                programmeToggle.setAttribute("aria-expanded", isOpen);
+            });
+
+            document.addEventListener("click", function (event) {
+                if (!programmeDropdown.contains(event.target)) {
+                    programmeDropdown.classList.remove("open");
+                    programmeToggle.setAttribute("aria-expanded", "false");
+                }
+            });
+
+            document.addEventListener("keydown", function (event) {
+                if (event.key === "Escape") {
+                    programmeDropdown.classList.remove("open");
+                    programmeToggle.setAttribute("aria-expanded", "false");
+                }
+            });
+        }
+    </script>
+
 
 </body>
 
